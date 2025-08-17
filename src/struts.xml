@@ -9,8 +9,8 @@
 		
 		<action name="LoginAction" class="com.diworksdev.login.action.LoginAction" method="execute"> <!-- 呼び出されるJavaクラスファイルと実行するメソッド宣言 -->
 			
-			<result name="success">loginSuccess.jsp</result> <!-- execute()から帰ってきた値によって処理 -->
-			<result name="error">loginError.jsp</result>
+			<result name="success">/loginSuccess.jsp</result> <!-- execute()から帰ってきた値によって処理 -->
+			<result name="error">/loginError.jsp</result>
 			
 		</action>
 	</package>
