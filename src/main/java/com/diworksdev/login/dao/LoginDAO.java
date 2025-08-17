@@ -18,8 +18,8 @@ public class LoginDAO {
 		
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, name); 
-			ps.setString(2, password); 
+			ps.setString(1,name); 
+			ps.setString(2,password); 
 			ResultSet rs=ps.executeQuery();  //select文のSQL文を実行するメソッド
 			
 			if(rs.next()) {  //select文でDBから取得した情報をString型に変換してDTOクラスに格納
